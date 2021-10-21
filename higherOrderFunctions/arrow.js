@@ -110,6 +110,11 @@ const compareNums2 = (num1, num2) => {
 let compare = compareNums2(5, 7)
 console.log(compare)
 
+const compareNums3 = (num1, num2) => Math.max(num1, num2)
+
+let mathObject = compareNums3(5, 10)
+console.log(mathObject)
+
   
 ////////// PROBLEM 6 //////////
 
@@ -136,3 +141,5 @@ const tremors = bestMovie('Tremors')
 console.log(sharknado)
 console.log(lakePlacid)
 console.log(tremors)
+
+

@@ -40,7 +40,8 @@ const prices = [15.00, 23.00, 78.00, 34.00, 12.00, 86.00, 12.00, 79.00, 32.00];
 */
 
 // CODE HERE
-const postTaxPrices // = prices.map(/* Provide Your Callback Here );
+const postTaxPrices  = prices.map( price => price * 1.07 );
+console.log(postTaxPrices)
 
 
 
@@ -58,7 +59,8 @@ const populations = [8175133, 3792621, 2695598, 2100263];
 */
 
 // CODE HERE
-const totalPopulation //  = populations.reduce(/* Provide Your Callback Here */)
+const totalPopulation  = populations.reduce((acc, curr) => acc + curr)
+console.log(totalPopulation)
 
 
 
@@ -83,7 +85,8 @@ const monstersInYourPocket = [{"monster":"Bulbabunny","CP":156},{"monster":"Bulb
 */
 
 // CODE HERE
-const myStrongest // = monstersInYourPocket.filter(/* Provide Your Callback Here */)
+ const myStrongest  = monstersInYourPocket.filter((element) => element['CP'] > 200)
+ console.log(myStrongest)
 
 
 
@@ -101,6 +104,9 @@ const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax
 */
 
 // CODE HERE
+
+const ordersTotal = orders.map((total) => total['price'] * total['tax'])
+console.log(ordersTotal)
 
 
 
@@ -121,3 +127,6 @@ const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
 */
 
 // CODE HERE
+
+const bobsTotal = purchases.filter(name => name['owner'] = 'Bob').map(payments => payments['price']).reduce((acc, current) => acc + current)
+console.log(bobsTotal)
