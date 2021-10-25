@@ -224,11 +224,11 @@ let sampleString = "Hi, my name is Kylo."
 
 //CODE HERE
 
-// function toUpperCase(intro) {
-//   intro = sampleString.toUpperCase()
-//   console.log(intro)
+// function toUpperCase(string){
+//   return string.toUpperCase()
 // }
-// toUpperCase(sampleString)
+// let test = toUpperCase(sampleString)
+// console.log(test)
 
 ////////////////// PROBLEM 12 ////////////////////
 /*
@@ -338,10 +338,10 @@ function pond() {
 let globalScope = ["duck"]
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ["rubberDuck"]
+let bathroomScope = ["rubberDuck", "duck"]
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ["sailorDuck"]
+let bathtubScope = ["sailorDuck", "rubberduck", "duck"]
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ["realDuck"]
+let pondScope = ["realDuck", "duck"]
