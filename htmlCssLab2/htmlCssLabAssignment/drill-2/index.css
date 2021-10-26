@@ -1,0 +1,62 @@
+.topbox {
+  display: flex;
+  border: black solid 2px;
+  justify-content: flex-start;
+  height: 20vh;
+  margin: auto;
+}
+
+.small-rectangle {
+  background-color: purple;
+  height: 100px;
+  width: 2pc;
+  margin: 5px;
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+
+.big-rectangle {
+  background-color: green;
+  height: 120px;
+  width: 250px;
+  margin: 25px;
+  align-items: center;
+}
+
+.blue-circle {
+  background-color: skyblue;
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  margin: 5px;
+  align-items: center;
+}
+
+.dotted-border {
+  display: flex;
+  border: black dotted 3px;
+  height: 20vh;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.inner-box {
+  background-color: rgb(230, 230, 103);
+  height: 100px;
+  width: 90vw;
+  margin: 20px;
+  box-shadow: 10px 10px 5px grey;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  border: 1px solid lightgrey;
+  margin-top: 10px;
+  padding: 100px;
+  margin-left: 500px;
+  margin-right: 500px;
+  color: blue;
+  font-weight: 700;
+  box-shadow: 3px 3px 2px lightgrey;
+}
