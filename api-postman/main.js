@@ -4,7 +4,6 @@ const resBtn = document.getElementById('get-res')
 
 getResidentData = () => {
   axios.get(url).then(res => {
-    debugger
     let residents = res.data.results[0].residents;
     return residents.map(url => {
       axios.get(url).then(res => 
