@@ -6,6 +6,8 @@ invoices = open('CupcakeInvoices.csv')
 for invoice in invoices:
     print(invoice)
 
+invoices.close()
+
 with open('CupcakeInvoices.csv') as invoices:
     reader = csv.reader(invoices)
     for row in reader:
@@ -48,5 +50,3 @@ fig = go.Figure(
     layout_title_text="Chocolate vs Vanilla vs Strawberry Cupcake Sales"
 )
 fig.show()
-
-invoices.close()
